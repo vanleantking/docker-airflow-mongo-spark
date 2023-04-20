@@ -1,0 +1,39 @@
+version: '3'
+services:
+  app:
+    container_name: 'spotify-display-api'
+    volumes:
+      - ./logs:/app/logs
+    build:
+      context: .
+      dockerfile: './docker/src/Dockerfile'
+    environment:
+      - MONGO_HOST='host.docker.internal'
+      - MONGO_PORT='40002'
+      - MONGO_USERNAME='adserver'
+      - MONGO_PASSWORD='adserver123'
+      - MONGO_DATABASE='adserver'
+    links:
+      - 'mongodb'
+    depends_on:
+      - 'mongodb'
+    networks:
+      - ad-server
+  mongodb:
+    image: 'mongo:5.0'
+    container_name: 'mongo-adserver'
+    volumes:
+      - ./docker/mongo/data:/data/db
+      - ./docker/mongo/init/:/docker-entrypoint-initdb.d/
+    restart: always
+    ports:
+      - '40001:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: admin
+    networks:
+      - ad-server
+networks:
+  ad-server:
+    driver: bridge
