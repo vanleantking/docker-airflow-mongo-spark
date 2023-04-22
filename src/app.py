@@ -3,6 +3,7 @@ import sys
 from pkg.initialize_app_context import initialize_app_context
 from pkg.common.utils import get_env_data_as_dict
 from pkg.spotify.api import spotify_api
+from pkg.pipelines.recent_plays_songs import download_recent_songs
 
 
 def main(args=None, env=None):
@@ -15,6 +16,7 @@ def main(args=None, env=None):
     fb_app = initialize_app_context(args=args, env=env)
 
     print('-----------run once at start app-----------, ', fb_app)
+    download_recent_songs(app=fb_app)
 
     print('not support')
 

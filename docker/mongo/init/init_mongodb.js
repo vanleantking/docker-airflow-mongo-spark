@@ -1,15 +1,15 @@
 db = connect("root:root@localhost:27017/admin");
-db = db.getSiblingDB('adserver');
+db = db.getSiblingDB('spotify_songs');
 db.createUser({
-'user': "adserver",
-'pwd': "adserver123",
+'user': "spotify_songs",
+'pwd': "sp123",
 'roles': [{
     'role': 'dbOwner',
-    'db': 'adserver'}]});
+    'db': 'spotify_songs'}]});
 // user created
 
-conn = connect("adserver:adserver123@localhost:27017/adserver");
-db = db.getSiblingDB('adserver');
+conn = connect("spotify_songs:sp123@localhost:27017/spotify_songs");
+db = db.getSiblingDB('spotify_songs');
 db.test.insertOne(
     {
       title: "The Favourite",
