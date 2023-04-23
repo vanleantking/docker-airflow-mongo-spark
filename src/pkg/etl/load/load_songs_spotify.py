@@ -7,6 +7,7 @@ DATABASE_LOCATION = "sqlite:///my_played_tracks.sqlite"
 
 def load_songs_spotify(app):
     songs_df = extract_songs(app=app)
+    print(songs_df)
     if check_songs_df(df=songs_df) is False:
         raise Exception('data response songs invalid')
 

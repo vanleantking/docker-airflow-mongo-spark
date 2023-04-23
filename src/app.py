@@ -63,6 +63,11 @@ if __name__ == '__main__':
         type=str,
         help='app logger',
         default=env['ApplicationLogger'])
+    arg_parser.add_argument(
+        '--top_secret_access_token',
+        type=str,
+        help='app logger',
+        default=env['SpotifySecretAccessToken'])
 
     print(env)
 
