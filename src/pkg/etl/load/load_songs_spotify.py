@@ -13,7 +13,6 @@ def load_songs_spotify(app):
 
     songs_df_transformed = transform_df(load_df=songs_df)
     print('songs_df_transformed, ', songs_df_transformed)
-    exit(1)
     upsert_songs_df(app=app, df=songs_df_transformed)
     print('process done')
 
