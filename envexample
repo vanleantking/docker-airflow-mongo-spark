@@ -5,3 +5,6 @@ SpotifyClientSecret=
 SpotifyAccountBase=
 SpotifyAPIBase=
 SpotifyVersion=
+
+# Only for linux/window setup
+#AIRFLOW_UID=50000

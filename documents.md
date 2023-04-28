@@ -6,3 +6,13 @@
 - https://www.youtube.com/watch?v=K9AnJ9_ZAXE
 - https://airflow.apache.org/docs/docker-stack/build.html
 - https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
+
+
+
+https://docs.google.com/presentation/d/1r4ke0YnaXJ0bIWjADZcCnC0LeRy6ZmukZJoosp82E7Y/edit#slide=id.g183ffa5f18f_0_5
+https://github.com/trieu/leo-cdp-free-edition
+https://knowledge.leocdp.net/p/introduction-to-leo-cdp-101.html
+
+
+
+https://github.com/0xTheProDev/fastapi-clean-example
