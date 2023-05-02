@@ -16,3 +16,4 @@ https://knowledge.leocdp.net/p/introduction-to-leo-cdp-101.html
 
 
 https://github.com/0xTheProDev/fastapi-clean-example
+https://levelup.gitconnected.com/running-apache-airflow-via-docker-compose-bcbb19f30cd6
