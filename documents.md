@@ -7,6 +7,9 @@
 - https://www.youtube.com/watch?v=K9AnJ9_ZAXE
 - https://airflow.apache.org/docs/docker-stack/build.html
 - https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
+- https://marclamberti.com/blog/variables-with-apache-airflow/#How_to_set_a_variable_in_Airflow
+- https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html#writing-a-dag
+- https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html#declaring-a-dag
 
 
 
@@ -20,3 +23,5 @@ https://github.com/0xTheProDev/fastapi-clean-example
 https://levelup.gitconnected.com/running-apache-airflow-via-docker-compose-bcbb19f30cd6
 https://airflow.apache.org/docs/apache-airflow/2.2.3/docker-compose.yaml
 https://realpython.com/python-microservices-grpc/
+https://medium.com/@jw_ng/using-airflow-variables-to-create-a-dynamic-workflow-291a759c77be
+https://betterdatascience.com/apache-airflow-run-tasks-in-parallel/
