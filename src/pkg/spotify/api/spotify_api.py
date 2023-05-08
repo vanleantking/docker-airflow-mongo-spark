@@ -72,7 +72,7 @@ class SpotifyAPI(object):
         print('base64_str, ', base64_str)
         return base64.b64encode(str_byte)
 
-    def get_recents_song(self, limit=50, date_range=1):
+    def get_recents_song(self, limit=50, date_range=10):
         """
         get_recents_song: return the latest songs in range date parameter
         :param access_token:

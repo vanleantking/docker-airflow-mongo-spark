@@ -66,7 +66,7 @@ services:
       - ./docker/mongo/init/:/docker-entrypoint-initdb.d/
     restart: always
     ports:
-      - '40001:27017'
+      - '40002:27017'
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root

@@ -18,6 +18,7 @@ def check_songs_df(df):
 
 
 def transform_df(load_df):
+    print('before process transform, ', load_df.head(20), len(load_df))
     # Applying transformation logic
     processed_df = load_df.groupby(['timestamp', 'artist_name'], as_index=False).count()
     processed_df.rename(columns={'played_at': 'count'}, inplace=True)

@@ -10,13 +10,10 @@ RUN apt-get install -y tzdata
 WORKDIR /app
 COPY ./logs/gg /app/logs/gg
 COPY ./data /app/data
-COPY ./pkg/common /app/pkg/common
-COPY ./tasks /app/tasks
-COPY ./pkg/models /app/pkg/models
-COPY ./pkg/dv360 /app/pkg/dv360/
-COPY ./requirements.txt /app/requirements.txt
-COPY ./app.py /app/app.py
 COPY ./.env /app/.env
+COPY ./src/pkg /app/pkg
+COPY ./src/app.py /app/app.py
+COPY ./requirements.txt /app/requirements.txt
 RUN pip install --requirement requirements.txt
 RUN ls
 CMD [ "python", "app.py", "--gg_application_name=api-gg-logger", "--gg_application_logger=./logs/gg/log.txt", "--run_previous_report=False"]

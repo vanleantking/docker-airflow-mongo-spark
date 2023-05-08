@@ -19,3 +19,4 @@ https://knowledge.leocdp.net/p/introduction-to-leo-cdp-101.html
 https://github.com/0xTheProDev/fastapi-clean-example
 https://levelup.gitconnected.com/running-apache-airflow-via-docker-compose-bcbb19f30cd6
 https://airflow.apache.org/docs/apache-airflow/2.2.3/docker-compose.yaml
+https://realpython.com/python-microservices-grpc/

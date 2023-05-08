@@ -18,6 +18,6 @@ def load_songs_spotify(app):
 
 
 def upsert_songs_df(app, df):
-    songs_collections = app.mongodbs['spotfify_app']['songs']
+    songs_collections = app.mongodbs['spotify_songs']['songs']
     filter_cl = ['timestamp', 'artist_name']
     upsert_df_into_db(collection=songs_collections, report_detail=df, filter_cl=filter_cl)

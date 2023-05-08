@@ -1,9 +1,3 @@
-import pandas as pd
-import requests
-from datetime import datetime
-import datetime
-from pkg.spotify.api.spotify_api import SpotifyAPI
-
 
 def extract_songs(app):
     """
